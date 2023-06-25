@@ -1,0 +1,212 @@
+Form Element:
+
+The part of processing the data involves two important
+attributes that are attached to the form element.
+
+Attributes:
+
+action: 
+    The action attribute is the web address of a 
+    program that processes the information submitted by
+    our form.
+
+method:
+    It is the HTTP method that the browser uses to 
+    submit the form, the possible values are POST
+    and GET.
+
+    POST :  Data from the body of the form is sent to
+            the server.
+
+    GET:    Data is sent inside of the URL and parameters are
+            separated with a question mark.
+
+
+Note :
+    You cannot have forms nested inside another form.
+
+
+Input Element:
+
+The input element is th emost commonly used form element. It is used 
+to make fields wher user can input some data.
+
+Some mostly used input element:
+
+Button: Button is generally a push button, which is pushed to activate.
+checkbox: The checkbox must be ticked to activate it.
+color: Interface used to choose the color of our choice.
+date: Interface used to choose a date.
+Email: Interface used to accept e-mail addresses.
+File: Interface used to upload files.
+Image: Interface used to input an image.
+Month: Interface used to input years and months. The format is “YYYY-MM”.
+Number: Interface let the user enter a number.
+Password: Interface defines a password field (characters are masked for security).
+Radio: Collection of radio buttons inputting a set of options.
+Range: Slide control interface with  Default range is 0 to 100.
+Reset: Interface used to resets the form to the default values.
+Search: Interface for entering a search string.
+Submit: Interface for submitting all form values to a form-handler.
+Text: Interface to input single-line text field.
+
+Some important attributes of input element:
+
+type:
+    It indicates what type of input we want.
+
+    for example, <input type="email", ...>
+
+id:
+    it is not mandatory but it's good idea to add one
+    to apply CSS/JavaScript.
+
+name:
+    It is necessary because whena form is submitted
+    to the server side code, the sever can understand 
+    the form data and process the value appropriately.
+
+placeholder:
+    It is a short hint which is displayed in the input field before
+    the user enters the value.
+
+
+Textarea Element:
+    Sometimes a single line of text is not enough and simple
+    input element won't work.
+
+The <textarea> is not a self closing tag, so we need to type
+both the opening and the closing tag.(<textarea></textarea>).
+
+Attributes:
+
+id: Same as mentioned above
+name: Same as mentioned above
+cols : Specifies the visible width of a text area.
+rows: Specifies the visible number of lines in a text area.
+
+
+Note: In most browsers the textarea element is resizable.
+
+Button element:
+
+The button element is the most important form element.
+
+The button element accepts the attribute called type. This
+attribute accepts three values submit, reset and buutton.
+
+Attributes:
+
+type="reset", it will clear all the form data 
+                when it is clicked.
+
+type="button", It does not hava any default behaviour and it's mostly used
+                with JS to program it for custome behaviour.
+
+type="submit": it's default behaviour is to submit the form 
+                and send all the data over the server.
+
+
+Label Element:
+
+We can label each one of our forms controls using the label
+element.
+
+The most used attribute with a lable is for.
+
+Attribute for:
+    The for attribute associates the label with a 
+    particular form element. The way it matches is by ID.
+
+    The value of the ID attribute is same as for attributegiven to the 
+    label element.
+
+Note:
+    When we click on the label, we automatically get the focus
+    to the input field which is associated with the label. This is the
+    default behaviour.
+
+
+Radio buttons:
+    
+    If we have something like 5 or fewers options, it's 
+    better to use radio buttons.
+
+
+Attributes:
+    name: Same as mentioned above
+
+    value: Since we are creating these predefined options,
+    we need to specify what the value should look like
+    when it's submitted. So, we use the value attribute to 
+    specify the values to predefined options.
+
+
+Note:
+    if we select one option and then we try yo select 
+    another option, we'll see that it deselects the previous
+    option. The way that it knows to do that is because we have 
+    the name attribute exactly same.
+
+    Name should be the same if we want radio buttons to be a part of
+    the same radio buton group.
+
+
+Checkboxes:
+
+If we might hava a group of predefined options. We
+want the user to be able to select multiple options and 
+not just one of them.
+
+Attributes:
+
+    name:   Same as mentioned above
+
+    value:  Since we are creating these predefined options,
+    we need to specify what the value should look like 
+    when it's submitted.
+
+    checked:    By default, a checkox input is unchecked.
+    We can set the default state to checked by using the 
+    attribute called checked. Remember this is a boolean attribute.
+
+Select Menus:
+
+Anytime we have a list of options for more than 4-5
+it is best to go with the select menu because it saves space.
+
+The select menu element is made using opening and closing
+<select> tag.
+
+The select element renders a drop-down menu that contains
+selectable options.
+
+The select element won't do anything by itself, it needs option elements.
+
+Attributes:
+    name : Same as mentioned above
+
+option:
+
+The option element represents one of the choices that a user can
+choose in a select menu. 
+
+The <option> element uses an attribute called value.
+
+Attribute:
+
+value:
+    When we submit a form to server-side code, each form element has an associated value 
+    for text inputs and text areas.
+
+    However, since we are creating these predefined options,
+    we need to specify what the value should look like when it's submitted.
+    So we use the value attribute to specify the values to predeined options.
+
+
+We can also organize our list into logical groups
+with the <optgroup> element.
+
+Attribute:
+
+label: The name of the group of options.

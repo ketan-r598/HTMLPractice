@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            text-align: center;
+        }
+
+        th {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Important Table tags:
+
+    <table>
+        <caption></caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tbody>
+            A table can haev multiple bodies 
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+            </tr>
+        </tfoot>
+        </thead>
+
+
+    </table>
+
+    Along with all that tags we have important and yet useful attributes like scope,
+    colspan, and rowspan etc. -->
+
+    <!-- Simple Table -->
+    <table>
+        <tr>
+            <th>First Col</th>
+            <th>Second Col</th>
+            <th>Third Col</th>
+            <th>Fourth Col</th>
+        </tr>
+
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td>I</td>
+            <td>II</td>
+            <td>III</td>
+            <td>IV</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <!-- Rowspan Table -->
+    <table>
+        <tr>
+            <th rowspan="2">First Col</th>
+            <th>Second Col</th>
+            <th>Third Col</th>
+            <th>Fourth Col</th>
+        </tr>
+
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+            <td>Three</td>
+            <!-- <td>Four</td> -->
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td>I</td>
+            <td>II</td>
+            <td>III</td>
+            <td>IV</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <!-- Colspan Table -->
+    <table>
+        <tr>
+            <th colspan="2">First Col</th>
+            <th>Second Col</th>
+            <th>Third Col</th>
+            <!-- <th>Fourth Col</th> -->
+        </tr>
+
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td>I</td>
+            <td>II</td>
+            <td>III</td>
+            <td>IV</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

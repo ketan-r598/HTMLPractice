@@ -1,0 +1,26 @@
+Tables in HTML:
+
+Some important tags related to tables are:
+
+<table> </table>
+<thead> </thead>
+<tbody> </tbody>
+<tfoot> </tfoot>
+<tr> </tr>
+<th> </th>
+<td> </td>
+<caption>
+
+Some important attributes related to tables are:
+
+scope
+rowspan
+colspan
+
+Some css properties that is necessart for proper tables:
+
+table,th,td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+}

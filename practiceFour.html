@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div tag</title>
+
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%
+        }
+
+        /* body {
+            background-color: black;
+        } */
+
+        #header {
+            background-color: green;
+            height: 10%;
+            /* padding-left: 1px; */
+            /* padding-top: 1px; */
+        }
+
+        #body {
+            height: 90%;
+            background-color: red;
+            /* padding-left: 1px; */
+            /* padding-top: 1px; */
+            /* margin-top: 1pc; */
+        }
+
+        #sidebar {
+            height: 100%;
+            width: 25%;
+            background-color: blue;
+            float: left
+        }
+
+        #content {
+            height: 100%;
+            width: 75%;
+            background-color: blueviolet;
+            float: right;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header">
+        <p>Hello from header</p>
+    </div>
+    <div id="body">
+        <!-- <p>Hello from body</p> -->
+        <div id="sidebar">
+            <p>Hello from sidebar</p>
+        </div>
+        <div id="content">
+            <p>Hello from content</p>
+        </div>
+    </div>
+</body>
+
+</html>
