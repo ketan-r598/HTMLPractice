@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+
+    <style>
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        th,
+        td {
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table align="center">
+
+        <caption>
+            Personal Details
+        </caption>
+        <form action="" method="post">
+        <tr>
+            <td>
+                <label for="salutation">Salutation</label>
+            </td>
+
+            <td>
+                <select name="salutation" id="salute">
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Sir">Sir</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="firstname">First name</label>
+            </td>
+
+            <td>
+                <input type="text" name="firstname" id="firstname">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="lastname">Last name</label>
+            </td>
+
+            <td>
+                <input type="text" name="lastname" id="lastname">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="gender">Gneder</label>
+            </td>
+            <td>
+                <input type="radio" name="gender" id="gender" value="male">
+                <label for="gender">Male</label>
+            </td>
+            <td>
+                <input type="radio" name="gender" id="gender" value="female">
+                <label for="gender">Female</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="email">Email</label>
+            </td>
+            <td>
+                <input type="email" name="email" id="email">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="dob">Date of Birth</label>
+            </td>
+            <td>
+                <input type="date" name="dob" id="dob">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="add">Address</label>
+            </td>
+            <td>
+                <textarea name="add" id="add" cols="30" rows="4"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </td>
+        </tr>
+    </form>
+    </table>
+
+</body>
+
+</html>

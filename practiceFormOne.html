@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        th,
+        td {
+            /* border: 2px solid white; */
+            border-collapse: collapse;
+            padding: 10px;
+            /* border-top: 2px solid black; */
+        }
+
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table align="center">
+
+        <caption>Registration Form</caption>
+
+        <form>
+
+            <tr>
+                <td>
+                    <label for="name">Enter your full name</label>
+                </td>
+                <td>
+                    <input type="text" name="name" id="name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="email">Enter your email</label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="password">Enter your password</label>
+                </td>
+                <td>
+                    <input type="password" name="password" id="password">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="password">Enter your password</label>
+                </td>
+                <td>
+                    <input type="password" name="password" id="password">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="gender">Enter your gender</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="radio" name="gender" id="gender" value="Male">
+                    <label for="Male">Male</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="radio" name="gender" id="gender" value="Female">
+                    <label for="Female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="gender" id="gender" value="Others">
+                    <label for="Others">Others</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="add">Enter your address</label>
+                </td>
+                <td>
+                    <textarea name="add" id="add" rows="2" cols="10"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="submit">submit</button>
+                </td>
+
+                <td>
+                    <button type="reset">reset</button>
+                </td>
+            </tr>
+        </form>
+
+    </table>
+</body>
+
+</html>
